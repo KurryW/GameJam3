@@ -1267,8 +1267,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
@@ -9060,8 +9064,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
@@ -13501,8 +13509,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
@@ -14208,6 +14220,7 @@ GameObject:
   - component: {fileID: 636186153}
   - component: {fileID: 636186152}
   - component: {fileID: 636186151}
+  - component: {fileID: 636186154}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -14279,7 +14292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 636186152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 636186154}
+        m_TargetAssemblyTypeName: LoadsceneAll, Assembly-CSharp
+        m_MethodName: LoadSceneButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &636186152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14318,6 +14343,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636186149}
   m_CullTransparentMesh: 1
+--- !u!114 &636186154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636186149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b752025c2a5748be8743876e332e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Menu
 --- !u!1 &637758248
 GameObject:
   m_ObjectHideFlags: 0
@@ -20730,8 +20768,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
@@ -22557,8 +22599,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
@@ -29686,6 +29732,7 @@ GameObject:
   - component: {fileID: 1406813493}
   - component: {fileID: 1406813492}
   - component: {fileID: 1406813491}
+  - component: {fileID: 1406813494}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -29757,7 +29804,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1406813492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1406813494}
+        m_TargetAssemblyTypeName: LoadsceneAll, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1406813492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29796,6 +29855,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406813489}
   m_CullTransparentMesh: 1
+--- !u!114 &1406813494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406813489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b752025c2a5748be8743876e332e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1 &1407817172
 GameObject:
   m_ObjectHideFlags: 0
@@ -36410,8 +36482,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
@@ -46118,8 +46194,12 @@ MonoBehaviour:
   - {fileID: 2008598277}
   - {fileID: 265512451}
   - {fileID: 984585597}
+  waypoints2: []
+  waypoints3: []
   speed: 2
   target1: {fileID: 1957125314}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
   Text1: {fileID: 0}
   Text2: {fileID: 0}
   Text3: {fileID: 0}
