@@ -7,7 +7,7 @@ public class Waypoints : MonoBehaviour
     public List<GameObject> waypoints;
     public List<GameObject> waypoints2;
     public List<GameObject> waypoints3;
-    public float speed = 2;
+    public float speed;
     int index = 0;
 
     private Animator anim;
@@ -37,6 +37,7 @@ public class Waypoints : MonoBehaviour
         {
             PLayerHasEntered = true;
             Text1.SetActive(false);
+            
             anim.SetBool("Walk", true);
 
         }
@@ -80,12 +81,12 @@ public class Waypoints : MonoBehaviour
 
                 if (index == 3)
                 {
-                    Text3.SetActive(true);
+                    Text3.SetActive(false);
                 }
 
                 if (index == 4)
                 {
-                    Text3.SetActive(false);
+                    
                 }
 
                 if (index >= waypoints.Count)
