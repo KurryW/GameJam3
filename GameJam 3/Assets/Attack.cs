@@ -26,12 +26,14 @@ public class Attack : MonoBehaviour
         //}
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {
+            Debug.Log("sla de enemy");
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                Debug.Log("ik sla de enemy");
                 other.gameObject.GetComponent<EnemyHealth>().HurtEnemy(damageToGive);
 
             }

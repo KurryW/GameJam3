@@ -37,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
     public void HurtPlayer(int damageAmount)
     {
         currentHealth -= damageAmount;
-
+        Debug.Log("ik ben geraakt");
         //healthbar.SetHealth(currentHealth);
     }
 

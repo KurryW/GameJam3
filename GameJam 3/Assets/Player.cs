@@ -102,14 +102,14 @@ public class Player : MonoBehaviour {
 
 
 		
-		velocity.y = yVelocity;
-		controller.Move(velocity * Time.deltaTime);
+		//velocity.y = yVelocity;
+		//controller.Move(velocity * Time.deltaTime);
 
 		float turn = Input.GetAxis("Mouse X");
 		
 		transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
 		controller.Move(moveDirection * Time.deltaTime);
-		moveDirection.y -= gravity * Time.deltaTime;
+		//moveDirection.y -= gravity * Time.deltaTime;
 
 	}
 
