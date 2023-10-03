@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	private CharacterController controller;
 
     public AudioSource footstepsSound;
+    public AudioSource punchSound;
 
     public float speed = 600.0f;
 	public float turnSpeed = 400.0f;
@@ -55,23 +56,23 @@ public class Player : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.W))
 		{
 			anim.SetInteger("Walk", 1);
-			//footstepsSound.enabled = true;
+			footstepsSound.enabled = true;
 		}
 		else if (Input.GetKeyUp(KeyCode.W))
 		{
 			anim.SetInteger("Walk", 0);
-			//footstepsSound.enabled = false;
+			footstepsSound.enabled = false;
 		}
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetInteger("punch", 1);
-            //footstepsSound.enabled = true;
+            punchSound.enabled = true;
         }
         else if (Input.GetKeyUp(KeyCode.Space))
         {
             anim.SetInteger("punch", 0);
-            //footstepsSound.enabled = false;
+            punchSound.enabled = false;
         }
 
         moveDirection = transform.forward * Input.GetAxis("Vertical")  * speed;

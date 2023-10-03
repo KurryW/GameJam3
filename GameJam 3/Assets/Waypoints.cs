@@ -20,6 +20,9 @@ public class Waypoints : MonoBehaviour
     public GameObject Text2;
     public GameObject Text3;
     public GameObject PressSpacebarText;
+    public GameObject MeetBuddyText;
+
+    public AudioSource TalkSound;
 
     private bool PLayerHasEntered;
 
@@ -40,6 +43,7 @@ public class Waypoints : MonoBehaviour
         {
             PLayerHasEntered = true;
             Text1.SetActive(false);
+            MeetBuddyText.SetActive(false);
 
             //anim.SetBool("Walk", true);
             GetComponent<BoxCollider>().enabled = false;
@@ -71,6 +75,7 @@ public class Waypoints : MonoBehaviour
                 {
                     Text2.SetActive(true);
                     PressSpacebarText.SetActive(true);
+                    TalkSound.enabled = true;
                 }
 
                 if (index == 2)
@@ -78,6 +83,8 @@ public class Waypoints : MonoBehaviour
                     Text2.SetActive(false);
                     PressSpacebarText.SetActive(false);
                     Text3.SetActive(true);
+                    TalkSound.enabled = false;
+                    TalkSound.enabled = true;
                 }
 
                 if (index == 3)

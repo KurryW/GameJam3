@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         {
             
             SceneManager.LoadScene("GameOver");
-            Debug.Log("ik ben geraakt");
+            Debug.Log("ik ben dood");
         }
         
         

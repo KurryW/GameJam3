@@ -12,6 +12,9 @@ public class Waypoints1 : MonoBehaviour
 
     public Transform target2;
 
+    public GameObject Text1;
+    public GameObject Text2;
+
     public float speed;
     int index = 0;
 
@@ -52,23 +55,25 @@ public class Waypoints1 : MonoBehaviour
             index++;
             //Debug.Log("ik ga lopen naar 1");
 
-            //if (index == 1)
-            //{
-            //    Text2.SetActive(true);
-            //    PressSpacebarText.SetActive(true);
-            //}
+            if (index == 1)
+            {
+                Text2.SetActive(true);
+                
+            }
 
-            //if (index == 2)
-            //{
-            //    Text2.SetActive(false);
-            //    PressSpacebarText.SetActive(false);
-            //    Text3.SetActive(true);
-            //}
+            if (index == 2)
+            {
+                //Text1.SetActive(true);
+                Text2.SetActive(false);
 
-            //if (index == 3)
-            //{
-            //    Text3.SetActive(false);
-            //}
+                
+               
+            }
+
+            if (index == 3)
+            {
+                //Text1.SetActive(false);
+            }
 
             //if (index == 4)
             //{

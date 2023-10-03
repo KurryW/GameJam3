@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public int health;
     private int currentHealth;
 
+    public AudioSource snakeSound;
+
     //public Healthbar healthbar;
 
 
@@ -23,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             Destroy(gameObject);
+            snakeSound.enabled = false;
 
         }
     }

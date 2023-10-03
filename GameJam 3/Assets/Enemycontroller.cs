@@ -13,6 +13,8 @@ public class Enemycontroller : MonoBehaviour
 
     public float lookRadius = 15f;
 
+    public AudioSource snakeSound;
+
     Transform target;
     NavMeshAgent agent;
 
@@ -41,7 +43,9 @@ public class Enemycontroller : MonoBehaviour
         if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
+            snakeSound.enabled = true;
         }
+        
     }
 
     private void OnDrawGizmosSelected()
