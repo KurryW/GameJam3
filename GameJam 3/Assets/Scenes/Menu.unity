@@ -27004,6 +27004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 26.6
+  snakeSound: {fileID: 0}
 --- !u!95 &1390178172
 Animator:
   serializedVersion: 5
@@ -33825,6 +33826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 22.3
+  snakeSound: {fileID: 0}
 --- !u!95 &1742784189
 Animator:
   serializedVersion: 5
@@ -35130,6 +35132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 14.5
+  snakeSound: {fileID: 0}
 --- !u!95 &1824943419
 Animator:
   serializedVersion: 5
@@ -35971,6 +35974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepsSound: {fileID: 0}
+  punchSound: {fileID: 0}
   speed: 3
   turnSpeed: 100
   gravity: 20
@@ -40169,6 +40173,55 @@ Transform:
   m_Father: {fileID: 546057603}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097020451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097020453}
+  - component: {fileID: 2097020452}
+  m_Layer: 0
+  m_Name: post processing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2097020452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097020451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: e2cb3b68357f50b45a8ec3613ab63eeb, type: 2}
+--- !u!4 &2097020453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097020451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.384727, y: -14.512751, z: -23.92606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099728277
 GameObject:
   m_ObjectHideFlags: 0
@@ -42824,6 +42877,8 @@ MonoBehaviour:
   Text2: {fileID: 828327080}
   Text3: {fileID: 1960762440}
   PressSpacebarText: {fileID: 0}
+  MeetBuddyText: {fileID: 0}
+  TalkSound: {fileID: 0}
 --- !u!4 &5901452233923954800
 Transform:
   m_ObjectHideFlags: 0
@@ -43741,6 +43796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 26.26
+  snakeSound: {fileID: 0}
 --- !u!114 &9200025134601033725
 MonoBehaviour:
   m_ObjectHideFlags: 0
